@@ -27,4 +27,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def read_root():
-    return {"message": "This is root page"}
+    return {"message": "This is the root page"}
