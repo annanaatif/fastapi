@@ -6,7 +6,7 @@ from .config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 # print(settings.database_username)
-# models.Base.metadata.create_all(bind=engine) #instead of alembic
+# models.Base.metadata.create_all(bind=engine) #or instead can use alembic
 
 app = FastAPI()
 
@@ -27,4 +27,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def read_root():
-    return {"message": "This is the root page"}
+    return {"message": "This is the root page."}
